@@ -39,6 +39,7 @@ namespace Test {
       nf.NomeCliente = pedido.NomeCliente;
       nf.EstadoDestino = pedido.EstadoOrigem;
       nf.EstadoOrigem = pedido.EstadoDestino;
+      //
 
       if (nf.SerializeObject(nf))
         order.SaveItem(nf);
